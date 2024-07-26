@@ -15,59 +15,10 @@ importers:
         specifier: ^0.5.11
         version: 0.5.11(prettier@3.2.5)
       turbo:
-        specifier: ^2.0.8
-        version: 2.0.8
+        specifier: ^2.0.9
+        version: 2.0.9
 
   apps/docs:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      next:
-        specifier: ^14.2.3
-        version: 14.2.3(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@next/eslint-plugin-next':
-        specifier: ^14.2.3
-        version: 14.2.3
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/config-eslint
-      '@repo/tailwind-config':
-        specifier: workspace:*
-        version: link:../../packages/config-tailwind
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/config-typescript
-      '@types/node':
-        specifier: ^20.11.24
-        version: 20.11.24
-      '@types/react':
-        specifier: ^18.2.61
-        version: 18.2.61
-      '@types/react-dom':
-        specifier: ^18.2.19
-        version: 18.2.19
-      autoprefixer:
-        specifier: ^10.4.18
-        version: 10.4.18(postcss@8.4.35)
-      postcss:
-        specifier: ^8.4.35
-        version: 8.4.35
-      tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.1
-      typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
-
-  apps/web:
     dependencies:
       '@repo/ui':
         specifier: workspace:*
@@ -1120,6 +1071,7 @@ packages:
   /autoprefixer@10.4.18(postcss@8.4.35):
     resolution: {integrity: sha512-1DKbDfsr6KUElM6wg+0zRNkB/Q7WcKYAaK+pzXn+Xqmszm/5Xa9coeNdtP88Vi+dPzZnMjhge8GIV49ZQkDa+g==}
     engines: {node: ^10 || ^12 || >=14}
+    hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
@@ -1600,6 +1552,7 @@ packages:
 
   /eslint-config-prettier@9.0.0(eslint@8.57.0):
     resolution: {integrity: sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw==}
+    hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
@@ -2863,6 +2816,7 @@ packages:
   /next@14.2.3(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-dowFkFTR8v79NPJO4QsBUtxv0g9BrS/phluVpMAt2ku7H+cbcBJlopXjkWlwxrk/xGqMemr7JkGPGemPrLLX7A==}
     engines: {node: '>=18.17.0'}
+    hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
       '@playwright/test': ^1.41.2
@@ -3901,64 +3855,64 @@ packages:
       typescript: 5.4.5
     dev: true
 
-  /turbo-darwin-64@2.0.8:
-    resolution: {integrity: sha512-WxPAmpkJXTBfa2tmfLk1YI2eFc5vk8eOQS1gRA3bMfwDory1tKhdPGamDrVtMzMguCiWIvit5JU3x5SHJTLP9A==}
+  /turbo-darwin-64@2.0.9:
+    resolution: {integrity: sha512-owlGsOaExuVGBUfrnJwjkL1BWlvefjSKczEAcpLx4BI7Oh6ttakOi+JyomkPkFlYElRpjbvlR2gP8WIn6M/+xQ==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64@2.0.8:
-    resolution: {integrity: sha512-sMPkU2GiW5OotJNPWmCWGuoltjRilmazXd6EfKK12eoq4rR1PGxUtvKY8LOLHIudDDcB4VUbxWSgHR/VBezhuw==}
+  /turbo-darwin-arm64@2.0.9:
+    resolution: {integrity: sha512-XAXkKkePth5ZPPE/9G9tTnPQx0C8UTkGWmNGYkpmGgRr8NedW+HrPsi9N0HcjzzIH9A4TpNYvtiV+WcwdaEjKA==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64@2.0.8:
-    resolution: {integrity: sha512-5Uq3M36V1BBMbxdIoZHxzVdaSeJ2Uyp6lMj9L58iLX9wBPlrUY1f150Ys/PGOyTfyzL+wz2tqPqAsDSRSRhRIQ==}
+  /turbo-linux-64@2.0.9:
+    resolution: {integrity: sha512-l9wSgEjrCFM1aG16zItBsZ206ZlhSSx1owB8Cgskfv0XyIXRGHRkluihiaxkp+UeU5WoEfz4EN5toc+ICA0q0w==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64@2.0.8:
-    resolution: {integrity: sha512-b5EPHMNbR34z8aEosGQDb4m22o8VuWW3Nr5z3jbl+PMBJByBvGl/A5oYZIQfcJhRD5Ih/H1tqi7ftbrwouC3tQ==}
+  /turbo-linux-arm64@2.0.9:
+    resolution: {integrity: sha512-gRnjxXRne18B27SwxXMqL3fJu7jw/8kBrOBTBNRSmZZiG1Uu3nbnP7b4lgrA/bCku6C0Wligwqurvtpq6+nFHA==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64@2.0.8:
-    resolution: {integrity: sha512-2CKNENrm+/PaQEXcLqz0rd8KzppV6bO7Dju89bniKFo684Ip8zpq1YkOxGrhRPSgIFHKXph0ZmSoErqyfXoi5Q==}
+  /turbo-windows-64@2.0.9:
+    resolution: {integrity: sha512-ZVo0apxUvaRq4Vm1qhsfqKKhtRgReYlBVf9MQvVU1O9AoyydEQvLDO1ryqpXDZWpcHoFxHAQc9msjAMtE5K2lA==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64@2.0.8:
-    resolution: {integrity: sha512-10FZPqk2hzRo6pT3ze5DdfMS5beMMc6vYw61FSwoqoXefFFhPm/2IIuVpLFnhfuqroWtmb5ilQtHeNSYEXSv5Q==}
+  /turbo-windows-arm64@2.0.9:
+    resolution: {integrity: sha512-sGRz7c5Pey6y7y9OKi8ypbWNuIRPF9y8xcMqL56OZifSUSo+X2EOsOleR9MKxQXVaqHPGOUKWsE6y8hxBi9pag==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo@2.0.8:
-    resolution: {integrity: sha512-4BHTlXy/Sjtcy5skq3OBTQdTSkxbBbRhrQzEiRBcrc6OuEWe0iAefoYqJR0+c7dqD79AYqE/EJsDwE9kSq0YSA==}
+  /turbo@2.0.9:
+    resolution: {integrity: sha512-QaLaUL1CqblSKKPgLrFW3lZWkWG4pGBQNW+q1ScJB5v1D/nFWtsrD/yZljW/bdawg90ihi4/ftQJ3h6fz1FamA==}
     hasBin: true
     optionalDependencies:
-      turbo-darwin-64: 2.0.8
-      turbo-darwin-arm64: 2.0.8
-      turbo-linux-64: 2.0.8
-      turbo-linux-arm64: 2.0.8
-      turbo-windows-64: 2.0.8
-      turbo-windows-arm64: 2.0.8
+      turbo-darwin-64: 2.0.9
+      turbo-darwin-arm64: 2.0.9
+      turbo-linux-64: 2.0.9
+      turbo-linux-arm64: 2.0.9
+      turbo-windows-64: 2.0.9
+      turbo-windows-arm64: 2.0.9
     dev: true
 
   /type-check@0.4.0:
@@ -4052,6 +4006,7 @@ packages:
 
   /update-browserslist-db@1.0.13(browserslist@4.23.0):
     resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
+    hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:

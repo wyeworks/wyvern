@@ -1,7 +1,7 @@
-# Turborepo Tailwind CSS starter
+# Wyvern Design System
+
 
 Made with the official starter [with-tailwind by Turborepo] (https://github.com/vercel/turbo/blob/main/examples/with-tailwind/README.md)
-Technologies included: Typescript, Turborepo, TailwindCSS, Next.js.
 
 ## Using this example
 
