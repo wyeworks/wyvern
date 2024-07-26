@@ -18,7 +18,7 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={`${oswald.className} bg-secondary-500`}>
+      <body className={`${oswald.className} ui-bg-secondary-600`}>
         <Header title='DOCS' />{children}</body>
     </html>
   );

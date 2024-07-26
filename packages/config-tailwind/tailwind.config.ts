@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 
-// We want each package to be responsible for its own content.
 const config: Omit<Config, "content"> = {
   theme: {
     extend: {
@@ -10,6 +9,7 @@ const config: Omit<Config, "content"> = {
         },
         secondary: {
           100: '#ffffff',
+          600: '#292929',
           900: "#000000",
         },
       },
