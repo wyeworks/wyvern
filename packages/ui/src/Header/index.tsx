@@ -1,9 +1,10 @@
-export default function Header({
-  title,
-}: {
-  title: string;
-}): JSX.Element {
+export default function Header({ title }: { title: string }): JSX.Element {
   return (
-    <div className="flex ui-bg-secondary-900 ui-items-center ui-border-secondary-100 ui-border-b-2 ui-m-0 ui-h-14 ui-w-full ui-pl-4 ui-justify-between"><h1 className="ui-text-2xl ui-font-medium"><span className="ui-text-secondary-100">WYE</span><span className="ui-text-primary-600">{title}</span></h1></div>
+    <div className='flex bg-secondary-900 items-center border-secondary-100 border-b-[1px] m-0 h-14 w-full pl-4 justify-between'>
+      <h1 className='text-2xl font-medium'>
+        <span className='text-secondary-100'>WYE</span>
+        <span className='text-primary-600'>{title}</span>
+      </h1>
+    </div>
   );
 }
