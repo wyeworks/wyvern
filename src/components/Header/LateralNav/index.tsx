@@ -9,8 +9,8 @@ const LateralNav = ({ transparent = false }: LateralNavProps) => {
   const bgColor = transparent ? '' : 'bg-secondary-800';
   return (
     <div
-      class={`hidden w-[300px] md:block ${bgColor} m-0 border-r border-primary-600 p-3`}>
-      <Item title='Componentes'></Item>
+      class={`hidden w-[300px] md:block ${bgColor} m-0 border-r border-primary-600 p-3 font-merriweather`}>
+      <Item title='Comenzando'></Item>
       <div class='flex h-full'>
         <div class='h-5 w-1 bg-primary-600'></div>
         <ul class={`flex h-full flex-1 flex-col pl-4`}>
