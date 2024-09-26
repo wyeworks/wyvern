@@ -4,7 +4,7 @@ interface Props {
   children?: any
 }
 const Header = ({ first_word, second_word, children }: Props) => (
-  <nav class="flex items-center bg-bg-400 h-[70px] border-bottom border-solid border-b-4 border-accent-500 font-jost uppercase subpixel-antialiased">
+  <nav class="flex items-center bg-bg-400 h-[70px] border-bottom border-solid border-b-4 border-accent-500 font-oswald uppercase subpixel-antialiased">
     <span class="md:pl-3 pl-3 text-[34px] font-light text-primary-800 shadow-none">
       {first_word}
     </span>

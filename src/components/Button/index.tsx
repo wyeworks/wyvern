@@ -44,7 +44,7 @@ export const Button = ({ onClick, type, href, label }: ButtonProps) => {
         fallback={
           <button
             onclick={() => onClick}
-            class={`box-border font-jost text-base uppercase whitespace-nowrap	tracking-wider ${buttonDynamicClass()} w-auto rounded-lg px-4 py-2 `}
+            class={`box-border font-oswald text-base uppercase whitespace-nowrap	tracking-wider ${buttonDynamicClass()} w-auto rounded-lg px-4 py-2 `}
           >
             <span>{label}</span>
           </button>
@@ -52,7 +52,7 @@ export const Button = ({ onClick, type, href, label }: ButtonProps) => {
       >
         <A href={href!}>
           <button
-            class={`text-jost whitespace-nowrap	 tracking-wider ${buttonDynamicClass()} w-auto rounded-lg px-4 py-2 `}
+            class={`text-oswald whitespace-nowrap	 tracking-wider ${buttonDynamicClass()} w-auto rounded-lg px-4 py-2 `}
           >
             <span>{label}</span>
           </button>
