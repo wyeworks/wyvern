@@ -9,9 +9,7 @@ const Header = ({ first_word, second_word, children }: Props) => (
       {first_word}
     </span>
 
-    <div class="text-primary-600">
-      <span class="z-1 text-[35px]">{second_word}</span>
-    </div>
+      <span class="text-primary-600">{second_word}</span>
     {children}
   </nav>
 )

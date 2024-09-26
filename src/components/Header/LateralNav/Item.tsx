@@ -8,7 +8,7 @@ interface ItemProps {
 const Item = ({ children, ...props }: ItemProps) => {
   return (
     <li class='flex items-center'>
-      <span class='text-lg text-primary-200 font-bold'>{props.title}</span>
+      <span class='text-lg text-secondary-100 font-bold'>{props.title}</span>
       {children}
     </li>
   );

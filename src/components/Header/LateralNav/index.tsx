@@ -6,13 +6,13 @@ interface LateralNavProps {
 }
 
 const LateralNav = ({ transparent = false }: LateralNavProps) => {
-  const bgColor = transparent ? '' : 'bg-bg-200';
+  const bgColor = transparent ? '' : 'bg-secondary-800';
   return (
     <div
       class={`hidden w-[300px] md:block ${bgColor} m-0 border-r border-primary-600 p-3`}>
       <Item title='Componentes'></Item>
       <div class='flex h-full'>
-        <div class='h-5 w-1 bg-accent-300'></div>
+        <div class='h-5 w-1 bg-primary-600'></div>
         <ul class={`flex h-full flex-1 flex-col pl-4`}>
           <li>
             <A
@@ -21,9 +21,9 @@ const LateralNav = ({ transparent = false }: LateralNavProps) => {
               Botón
             </A>
           </li>
-          <span class='font-normal text-gray-200'>Test</span>
-          <span class='font-normal text-gray-200'>Test</span>
-          <span class='font-normal text-gray-200'>Test</span>
+          <span class='font-normal text-secondary-300'>Test</span> 
+          <span class='font-normal text-secondary-300'>Test</span>
+          <span class='font-normal text-secondary-300'>Test</span> 
           <A
             class='font-normal text-gray-200 underline-offset-4 hover:text-gray-100 hover:underline'
             href='/menu'>
