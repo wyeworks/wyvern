@@ -26,9 +26,9 @@ export const Button = ({ onClick, type, href, label }: ButtonProps) => {
   const buttonDynamicClass = () => {
     switch (type) {
       case ButtonType.Primary:
-        return 'font-medium bg-primary-600 text-secondary-100'
+        return 'font-normal bg-primary-600 text-secondary-100 text-lg'
       case ButtonType.Secondary:
-        return 'font-medium bg-secondary-900 text-secondary-100'
+        return 'font-normal bg-secondary-900 text-secondary-100 text-lg'
       /*case ButtonType.Danger:
         return 'font-regular  bg-danger-600 text-danger-100 border-solid border border-danger-400 hover:text-bg-400 hover:border-danger-600'
       case ButtonType.Success:
@@ -44,7 +44,7 @@ export const Button = ({ onClick, type, href, label }: ButtonProps) => {
         fallback={
           <button
             onclick={() => onClick}
-            class={`box-border font-oswald text-base uppercase whitespace-nowrap	tracking-wider ${buttonDynamicClass()} w-auto rounded-lg px-4 py-2 `}
+            class={`box-border font-oswald text-base uppercase whitespace-nowrap	tracking-wider ${buttonDynamicClass()} w-auto rounded px-4 py-2 `}
           >
             <span>{label}</span>
           </button>
@@ -52,7 +52,7 @@ export const Button = ({ onClick, type, href, label }: ButtonProps) => {
       >
         <A href={href!}>
           <button
-            class={`text-oswald whitespace-nowrap	 tracking-wider ${buttonDynamicClass()} w-auto rounded-lg px-4 py-2 `}
+            class={`text-oswald whitespace-nowrap	tracking-wider ${buttonDynamicClass()} w-auto rounded px-4 py-2 `}
           >
             <span>{label}</span>
           </button>
